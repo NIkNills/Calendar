@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #EEE;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #12121F;
+}
+
+.calendar {
+    width: 360px;
+    height: 420px;
+}
+
+.months {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.week-days, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.week-day, .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 7);
+    height: 40px;
+}
+
+.day:hover {
+    background-color: red;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.day__active {
+    background-color: red;
+}
+
+.day__prev,
+.day__next {
+    opacity: .5;
+}
+
+
